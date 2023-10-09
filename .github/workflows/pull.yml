@@ -14,7 +14,7 @@ on:
 jobs:
   build:
     # Задания будут выполняться в runtime environment, которое использует последнюю версию Ubuntu
-    runs-on: ubuntu-latest
+    runs-on: debian-latest
 
     steps:
       # Переключаемся на код последнего коммита
@@ -46,3 +46,6 @@ jobs:
       # Собираем проект
       - name: Build
         run: npm run build
+
+      - name: Git Pull
+        run: git pull
