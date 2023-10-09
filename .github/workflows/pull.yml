@@ -6,9 +6,6 @@ on:
   pull_request:
     branches:
       - main
-  push:
-    branches:
-      - main
 
 # Здесь определяется список заданий. Прежде всего, код должен быть собран в рамках этапа "build".
 jobs:
