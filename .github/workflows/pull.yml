@@ -3,9 +3,9 @@ name: CI Pipeline
 
 # Этот рабочий процесс запускается каждый раз, когда кто-либо совершает push в ветку main
 on:
-  pull_request:
-    branches:
-      - main
+#  pull_request:
+#    branches:
+#      - main
   push:
     branches:
       - main
@@ -21,20 +21,20 @@ jobs:
 
         - name: Git Pull
           run: git pull # Замените на вашу основную ветку
-  build:
+#  build:
     # Задания будут выполняться в runtime environment, которое использует последнюю версию Ubuntu
-    runs-on: ubuntu-latest
+#    runs-on: ubuntu-latest
 
-    steps:
+#    steps:
       # Переключаемся на код последнего коммита
-      - name: Checkout code
-        uses: actions/checkout@v3
+#      - name: Checkout code
+#        uses: actions/checkout@v3
 
       # Устанавливаем необходимую версию Node.js
-      - name: Use Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '16'
+#      - name: Use Node.js
+#        uses: actions/setup-node@v3
+#        with:
+#          node-version: '16'
 
       # Устанавливаем зависимости проекта
       # - name: Install dependencies
@@ -52,12 +52,12 @@ jobs:
       # - name: Test
       #   run: npm test
 
-      - name: Git Pull
-        run: git pull
+#      - name: Git Pull
+#        run: git pull
 
-      - name: Install dependencies
-        run: npm install
+#      - name: Install dependencies
+#        run: npm install
 
       # Собираем проект
-      - name: Build
-        run: npm run build
+#      - name: Build
+#        run: npm run build
