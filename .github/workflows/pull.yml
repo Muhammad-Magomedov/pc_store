@@ -46,6 +46,9 @@ jobs:
       - name: Git Pull
         run: git pull
 
+      - name: Install dependencies
+        run: npm install
+
       # Собираем проект
       - name: Build
         run: npm run build
