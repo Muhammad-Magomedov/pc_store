@@ -6,9 +6,21 @@ on:
   pull_request:
     branches:
       - main
+  push:
+    branches:
+      - main
 
 # Здесь определяется список заданий. Прежде всего, код должен быть собран в рамках этапа "build".
 jobs:
+  pull:
+    runs-on: ubuntu-latest
+
+    steps:
+        - name: Checkout repository
+          uses: actions/checkout@v3
+
+        - name: Git Pull
+          run: git pull # Замените на вашу основную ветку
   build:
     # Задания будут выполняться в runtime environment, которое использует последнюю версию Ubuntu
     runs-on: ubuntu-latest
