@@ -52,6 +52,3 @@ jobs:
       # Собираем проект
       - name: Build
         run: npm run build
-
-      - name: Start
-        run: npm start
