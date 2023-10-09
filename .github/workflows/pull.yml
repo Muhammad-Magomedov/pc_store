@@ -2,7 +2,9 @@
 name: CI Pipeline
 
 # Этот рабочий процесс запускается каждый раз, когда кто-либо совершает push в ветку main
-on: [push]
+on:
+  push:
+    branches: [ "main" ]
 #  pull_request:
 #    branches:
 #      - main
@@ -13,11 +15,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v3
+        - name: Checkout repository
+        - uses: actions/checkout@v3
 
-    - name: Git Pull
-      run: git pull origin main # Замените на вашу основную ветку
+        - name: Git Pull
+        - run: git pull origin main # Замените на вашу основную ветку
 #  build:
     # Задания будут выполняться в runtime environment, которое использует последнюю версию Ubuntu
 #    runs-on: ubuntu-latest
