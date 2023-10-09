@@ -28,8 +28,8 @@ jobs:
           node-version: '16'
 
       # Устанавливаем зависимости проекта
-      - name: Install dependencies
-        run: npm ci
+      # - name: Install dependencies
+      #  run: npm ci
 
       # Проверяем форматирование кода
       # - name: Check formatting
@@ -43,9 +43,12 @@ jobs:
       # - name: Test
       #   run: npm test
 
+      - name: Git Pull
+        run: git pull
+
       # Собираем проект
       - name: Build
         run: npm run build
 
-      - name: Git Pull
-        run: git pull
+      - name: Start
+        run: npm start
