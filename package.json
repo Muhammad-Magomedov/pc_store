@@ -19,6 +19,17 @@
     "test": "jest",
     "prepare": "husky install"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,json}": [
+      "npm run prettier:check",
+      "npm test"
+    ]
+  },
   "eslintConfig": {
     "extends": [
       "react-app",
