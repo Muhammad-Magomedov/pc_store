@@ -36,7 +36,7 @@ jobs:
       # - name: Lint
       #   run: npm run lint
 
-       # Выполняем тесты
+      # Выполняем тесты
       - name: Test
         run: npm test
 
