@@ -1,17 +1,8 @@
 {
-  "*.js": [
-    "prettier --write",
-    "eslint",
-    "test"
+  "*.{js,jsx,ts,tsx,json}": [
+    "npm run prettier:check",
+    "npm run test --findRelatedTests"
   ],
-  "*.jsx": [
-    "prettier --write",
-    "eslint",
-    "test"
-  ],
-  "*.html": [
-    "eslint",
-    "prettier --write"
-  ],
+  "*.html": ["eslint", "prettier --write"],
   "*.scss": "prettier --write"
 }
