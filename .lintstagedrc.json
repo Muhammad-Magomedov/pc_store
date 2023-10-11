@@ -1,11 +1,13 @@
 {
   "*.js": [
     "prettier --write",
-    "eslint"
+    "eslint",
+    "test"
   ],
   "*.jsx": [
     "prettier --write",
-    "eslint"
+    "eslint",
+    "test"
   ],
   "*.html": [
     "eslint",
