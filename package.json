@@ -16,7 +16,8 @@
     "prettier": "npx prettier . --write",
     "prettier:check": "prettier . --check",
     "eject": "react-scripts eject",
-    "test": "jest"
+    "test": "jest",
+    "prepare": "husky install"
   },
   "eslintConfig": {
     "extends": [
@@ -42,7 +43,9 @@
     "@testing-library/react": "^14.0.0",
     "babel-jest": "^29.7.0",
     "jest": "^27.5.1",
+    "lint-staged": "^14.0.1",
     "prettier": "3.0.3",
-    "react-test-renderer": "^18.2.0"
+    "react-test-renderer": "^18.2.0",
+    "husky": "^8.0.0"
   }
 }
