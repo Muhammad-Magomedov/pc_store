@@ -38,7 +38,7 @@ jobs:
 
       # Выполняем тесты
       - name: Test
-        run: npm jest-test
+        run: npm test
 
       # Собираем проект
       - name: Build
