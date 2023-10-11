@@ -16,7 +16,7 @@
     "prettier": "npx prettier . --write",
     "prettier:check": "prettier . --check",
     "eject": "react-scripts eject",
-    "test": "jest",
+    "jest-test": "jest",
     "prepare": "husky install"
   },
   "husky": {
