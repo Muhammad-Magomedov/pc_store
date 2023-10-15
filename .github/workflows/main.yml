@@ -61,7 +61,7 @@ jobs:
           # представляют собой зашифрованные переменные окружения, которые вы можете настроить в вашем репозитории.
           host: ${{ secrets.SERVER_IP }}
           username: ${{ secrets.SERVER_USER }}
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          password: ${{ secrets.SERVER_PASSWORD }}
           # Команды, которые нужно выполнить на сервере. Обычно это клонирование кода, установка зависимостей, сборка проекта и его запуск.
           script: |
             cd /pc_store/pc_store
