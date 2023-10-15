@@ -1,8 +1,5 @@
 {
-  "*.{js,jsx,ts,tsx,json}": [
-    "npm run prettier:check",
-    "npm run test --findRelatedTests"
-  ],
+  "*.{js,jsx,ts,tsx}": ["npm run prettier:check", "npm run test"],
   "*.html": ["eslint", "prettier --write"],
   "*.scss": "prettier --write"
 }
