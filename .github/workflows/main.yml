@@ -64,7 +64,7 @@ jobs:
           password: ${{ secrets.SERVER_PASSWORD }}
           # Команды, которые нужно выполнить на сервере. Обычно это клонирование кода, установка зависимостей, сборка проекта и его запуск.
           script: |
-            cd pc_store
+            cd /root/pc_store
             git fetch
             git reset --hard origin/main
             npm ci
