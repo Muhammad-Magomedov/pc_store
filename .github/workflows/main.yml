@@ -67,7 +67,6 @@ jobs:
             cd /pc_store/pc_store
             git fetch
             git reset --hard origin/main
-            git pull
             npm ci
             npm run build
             pm2 restart pc_store
