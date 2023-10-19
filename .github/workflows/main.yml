@@ -67,6 +67,7 @@ jobs:
             cd /root/pc_store
             git fetch
             git reset --hard origin/main
-            npm ci
-            npm run build
-            pm2 restart pc_store
+            docker build -t pc_store . 
+            docker stop pc_store || true
+            docker rm pc_store || true
+            docker run -dp 3000:3000 --name pc_store pc_store
