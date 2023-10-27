@@ -2,6 +2,12 @@
   "allowSyntheticDefaultImports": true,
   "esModuleInterop": true,
   "compilerOptions": {
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "esModuleInterop": true,
+  },
+  "ts-node": {
+    "compilerOptions": {
+      "module": "commonjs"
+    }
   }
 }
